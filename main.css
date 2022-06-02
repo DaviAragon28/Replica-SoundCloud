@@ -1,0 +1,395 @@
+:root {
+  --orange: #ff5500;
+  --background: #f2f2f2;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 82%;
+	margin: 0 auto;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	background-color: var(--background);
+	z-index: 1;
+}
+
+header {
+	min-height: 456px;
+	background-image: url('https://a-v2.sndcdn.com/assets/images/sc_landing_header_web_featured_artists-8081257b.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-top: 4px solid var(--orange);
+	position: relative;
+}
+
+.container__buttons--header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container__buttons--header .buttons-header a {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 15px;
+	margin-right: 5px;
+	text-decoration: none;
+	color: white;
+	border-radius: 5px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.buttons-header a:nth-child(1) {
+	border: 1px solid white;
+}
+
+.buttons-header a:nth-child(2) {
+	background-color: var(--orange);
+}
+
+.container__buttons--header .img__buttons--header {
+	position: relative;
+	padding-top: 20px;
+	margin-left: 90px;
+  
+}
+
+.container__buttons--header .img__buttons--header::before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -70px;
+	width: 64px;
+	height: 64px;
+	margin-right: 20px;
+	background-image: url('./logotipo-de-soundcloud.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.description--header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+	color: white;
+	text-align: center;
+}
+
+.description--header h1 {
+	font-weight: normal;
+}
+
+.description--header p {
+	margin: 20px 0px;	
+	line-height: 23px;
+	width: 40%;
+}
+
+.description--header a {
+	text-decoration: none;
+	color: white;
+	background-color: var(--orange);
+	padding: 15px 30px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+main {
+	background-color: white;
+}
+.search {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.search div input {
+	position: relative;
+	border: none;
+	width: 50%;
+	height: 50px;
+	background-color: #f2f2f2cc;
+	padding-left: 10px;
+	border-radius: 5px;
+	font-size: 15px;
+	color: #9b9cac;
+}
+
+.search div .o {
+	position: relative;
+}
+
+.search div .o::after {
+	position: absolute;
+	content: '';
+	width: 32px;
+	height: 32px;
+	background: url(./loupe.png);
+	background-repeat: no-repeat;
+	top: 5px;
+	left: -35px;
+	/* right: 0;
+	bottom: 0; */
+}
+
+.choose-music {
+	text-align: center;
+	padding-bottom: 60px;
+}
+.search a {
+	text-decoration: none;
+	color: white;
+	background-color: var(--orange);
+	padding: 10px 20px;
+	border-radius: 3px;
+}
+.choose-music p {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.container__grid__music {
+	display: grid;
+	gap: 15px;
+	grid-template-columns:  repeat(auto-fit, minmax(50px, 180px));
+	grid-template-rows: repeat(2, 1fr);
+	height: auto;
+	padding: 0px 30px;
+	place-content: center;
+}
+
+.container__grid__music .container__music {
+	margin-top: 20px;
+}
+.container__grid__music .container__music img {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.container__grid__music .container__music .container__link--music {
+	display: flex;
+	flex-direction: column;
+}
+
+.container__music .container__link--music {
+	text-align: left;
+}
+
+.container__music .container__link--music a {
+	text-decoration: none;
+}
+
+
+ .container__link--music span:nth-child(1) a{
+	font-size: 13px;
+	color: #333;
+	
+}
+
+.container__link--music span:nth-child(2) a{
+	font-size: 12px;
+	color: #999;
+}
+
+
+.choose-music .container__grid__music + a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: var(--orange);
+  padding: 10px 20px;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+
+.container--iphone {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 30px 0px;
+  background-color: var(--background);
+  height: 400px;
+}
+
+.container--iphone  .iphoneImg{
+	min-width: 350px;
+}
+.content--iphone {
+  width: 30%;
+  margin: 60px 0px 0px 40px;
+}
+
+.content--iphone .line {
+  width: 70px;
+  height: 3px;
+  background-image: linear-gradient(90deg, #7d01a1, #f30 50%, #f50);
+  margin-bottom: 20px;
+}
+.content--iphone p:nth-child(1) {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.content--iphone p:nth-child(3) {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.container__before--footer {
+  background-image: url('https://a-v2.sndcdn.com/assets/images/hp_creator_image_featured_artists@2x-3007d170.jpg');
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.before--footer {
+  width: 55%;
+  color: white;
+  padding: 70px 0px 0px 40px;
+}
+
+.before--footer p:nth-child(1) {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.before--footer p:nth-child(2) {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.before--footer a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 13px 24px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.container--thankfull {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.container--thankfull .first-paragragh {
+  padding-top: 100px;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.container--thankfull .first-paragragh + p {
+  font-size: 25px;
+}
+
+.container--thankfull .creat-an-account {
+  text-decoration: none;
+  color: white;
+  background-color: var(--orange);
+  padding: 13px 30px;
+  border-radius: 3px;
+  margin: 40px 0px;
+  display: inline-block;
+}
+
+.container--thankfull-buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container--thankfull-buttons p {
+  font-size: 13px;
+  margin: 15px 10px 0 0;
+}
+
+.container--thankfull-buttons a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 15px;
+}
+
+footer {
+  background-color: white;
+  padding-bottom: 100px;
+}
+
+footer .border {
+  width: 90%;
+  border-top: 1px solid lightgrey;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+footer .container-links-footer {
+  text-align: center;
+}
+footer .container-links-footer a {
+  text-decoration: none;
+  color: lightgray;
+  font-size: 12px;
+}
+
+
+
+@media (max-width: 1000px) {
+	header, .container__before--footer {
+		background-color: black;
+		background-image: none;
+	}
+
+	.container--iphone{
+		display: none;
+	}
+
+	.before--footer {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.before--footer p:nth-child(1) {
+		font-size: 23px;
+	}
+
+	.before--footer p:nth-child(2) {
+		font-size: 18px;
+	}
+
+	.description--header {
+		margin-top: 50px;
+	}
+
+	.buttons-header a:nth-child(2), .buttons-header a:nth-child(3) {
+		display: none;
+	}
+
+	.search div a, .search div span {
+		display: none;
+	}
+
+
+}
+
+@media (max-width: 1125px) {
+	.before--footer {
+		padding: 30px 0 0 20px;	
+		font-size: 14px;
+	}
+}
+/* header {
+	min-height: 456px;
+	background-image: url('https://a-v2.sndcdn.com/assets/images/sc_landing_header_web_featured_artists-8081257b.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-top: 4px solid var(--orange);
+	position: relative;
+} */
